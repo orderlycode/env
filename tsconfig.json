@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig-base.json",
+  "main": "./cjs/index.js",
+  "module": "./esm/index.js",
+  "types": "./esm/index.d.ts",
+  "compilerOptions": {
+    "module": "commonjs",
+    "outDir": "cjs"
+  }
+}

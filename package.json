@@ -1,0 +1,27 @@
+{
+  "name": "@orderlycode/env",
+  "version": "1.0.2",
+  "description": "",
+  "main": "./cjs/index.js",
+  "module": "./esm/index.js",
+  "types": "./esm/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig-esm.json",
+    "start": "ts-node src/index.ts",
+    "update-dependencies": "npx npm-check-updates -u && npm i",
+    "preupload": "npm run build",
+    "upload": "npm publish --access public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3"
+  }
+}
