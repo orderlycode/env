@@ -1,6 +1,6 @@
 {
   "name": "@orderlycode/env",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "./cjs/index.js",
   "module": "./esm/index.js",
@@ -16,7 +16,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^16.0.3",
     "zod": "^3.21.4"
   },
   "devDependencies": {
