@@ -9,7 +9,7 @@ import {initEnv, z} from '@orderlycode/env';
 
 dotenv.config();
 
-const env = initEnv({
+export const env = initEnv({
   NODE_ENV: z.string().default('development'),
   PORT: z.string().default('4000').transform(Number),
 });
