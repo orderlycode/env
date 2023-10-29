@@ -7,9 +7,13 @@ dotenv를 사용하기 때문에 그에 맞춰서 .env 파일을 생성하면 �
 import * as dotenv from "dotenv";
 import {initEnv, z} from '@orderlycode/env';
 
-dontenv.config();
-const env = initEnv({
-  name: z.string(),
-  age: z.string().transform(Number),
+dotenv.config();
+
+export const env = initEnv({
+  NODE_ENV: z.string().default('development'),
+  PORT: z.string().default('4000').transform(Number),
 });
+
+export const isProduction = () => env.NODE_ENV === 'production';
+export const isDevelopment = () => env.NODE_ENV === 'development';
 ```
