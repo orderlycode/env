@@ -6,3 +6,4 @@ node_modules
 tsconfig.json
 tsconfig-base.json
 tsconfig-esm.json
+pnpm-lock.yaml
